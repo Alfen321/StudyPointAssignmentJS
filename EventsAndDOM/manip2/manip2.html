@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <carscript src="https://code.jquery.com/jquery-3.2.1.min.js"></carscript>
+</head>
+
+<body>
+    <div id="outer">
+        <div class="myDiv" id="myDivNumber1" onclick="writeToDiv(event)">iAmADiv</div>
+        <div class="myDiv" id="myDivNumber2" onclick="writeToDiv(event)">iAmADiv</div>
+        <div class="myDiv" id="myDivNumber3" onclick="writeToDiv(event)">iAmADiv</div>
+        <div class="myDiv" id="myDivNumber4" onclick="writeToDiv(event)">iAmADiv</div>
+        <div class="myDiv" id="myDivNumber5" onclick="writeToDiv(event)">iAmADiv</div>
+        <div class="myDiv" id="myDivNumber6" onclick="writeToDiv(event)">iAmADiv</div>
+        <div class="myDiv" id="myDivNumber7" onclick="writeToDiv(event)">iAmADiv</div>
+        <div class="myDiv" id="myDivNumber8" onclick="writeToDiv(event)">iAmADiv</div>
+        <div class="myDiv" id="myDivNumber9" onclick="writeToDiv(event)">iAmADiv</div>
+        <div class="myDiv" id="myDivNumber10" onclick="writeToDiv(event)">iAmADiv</div>
+        <div class="myDiv" id="myDivNumber11" onclick="writeToDiv(event)">iAmADiv</div>
+        <div class="myDiv" id="myDivNumber12" onclick="writeToDiv(event)">iAmADiv</div>
+    </div>
+
+    <p id="lastclicked"></p>
+
+    <script>
+        function writeToDiv(event) {
+            var target = event.target;
+            var id = target.id;
+            var output = document.getElementById('lastclicked');
+            output.innerText = "Hi form " + id;
+
+        }
+    </script>
+
+</body>
+
+</html>
